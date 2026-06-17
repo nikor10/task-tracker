@@ -2,6 +2,7 @@ package com.nikola.task_tracker_project_spring.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -13,33 +14,42 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "tasks")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@Schema(description = "A unit of work belonging to a project, optionally assigned to a user.")
 public class Task {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(description = "Server-generated identifier", accessMode = Schema.AccessMode.READ_ONLY, example = "42")
     private Long id;
 
     @NotBlank
     @Size(min = 3, max = 100)
     @Column(nullable = false)
+    @Schema(description = "Short title of the task (3-100 characters)", example = "Write API docs")
     private String title;
 
     @Column(columnDefinition = "TEXT")
+    @Schema(description = "Optional free-text details", example = "Document every endpoint in Swagger.")
     private String description;
 
     @NotNull
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Schema(description = "Current workflow status: TODO (not started), IN_PROGRESS (being worked on), "
+            + "or COMPLETED (finished)", example = "TODO")
     private TaskStatus status;
 
     @NotNull
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Schema(description = "Importance of the task: LOW, MEDIUM, or HIGH", example = "HIGH")
     private TaskPriority priority;
 
+    @Schema(description = "Date the task is due (ISO yyyy-MM-dd); may be null", example = "2026-07-01")
     private LocalDate dueDate;
 
     @Column(nullable = false, updatable = false)
+    @Schema(description = "When the task was created", accessMode = Schema.AccessMode.READ_ONLY)
     private LocalDateTime createdAt;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
@@ -49,6 +59,7 @@ public class Task {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "assignee_id")
+    @Schema(description = "User the task is assigned to; may be null when unassigned")
     private User assignee;
 
     @PrePersist

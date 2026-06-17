@@ -1,5 +1,6 @@
 package com.nikola.task_tracker_project_spring.entity;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -15,42 +16,59 @@ import java.time.LocalDateTime;
  */
 @Entity
 @Table(name = "task_activity")
+@Schema(description = "A single, immutable audit-trail entry describing one change to a task. "
+        + "Read-only: produced by the server, never accepted in a request body.")
 public class TaskActivity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(description = "Server-generated identifier", accessMode = Schema.AccessMode.READ_ONLY)
     private Long id;
 
     @Column(nullable = false)
+    @Schema(description = "Id of the task this entry describes", example = "42")
     private Long taskId;
 
     // Snapshot of the task title at write time, so the row reads sensibly after the task is gone.
     @Column(nullable = false)
+    @Schema(description = "Task title captured at write time, so the entry still reads sensibly "
+            + "after the task is deleted", example = "Write API docs")
     private String taskTitle;
 
     // The actor. Nullable to allow a future system/non-user action.
+    @Schema(description = "Id of the user who made the change; null for a system action", example = "3")
     private Long userId;
 
     // Snapshot of the actor's username at write time.
+    @Schema(description = "Username of the actor captured at write time", example = "alice")
     private String username;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Schema(description = "Kind of change recorded: CREATE (task added), UPDATE (a field changed), "
+            + "or DELETE (task removed)", example = "UPDATE")
     private TaskActivityAction action;
 
     // Which field changed; null for a whole-entity CREATE or DELETE.
+    @Schema(description = "Name of the field that changed; null for a whole-entity CREATE or DELETE",
+            example = "status")
     private String fieldChanged;
 
     @Column(columnDefinition = "TEXT")
+    @Schema(description = "Field value before the change; null when not applicable", example = "TODO")
     private String oldValue;
 
     @Column(columnDefinition = "TEXT")
+    @Schema(description = "Field value after the change; null when not applicable", example = "IN_PROGRESS")
     private String newValue;
 
     // Groups the rows produced by a single atomic edit (e.g. one update touching three fields).
+    @Schema(description = "Identifier shared by all entries produced by a single atomic edit, so a "
+            + "multi-field update can be grouped back together")
     private String changeSetId;
 
     @Column(nullable = false, updatable = false)
+    @Schema(description = "When the change was recorded", accessMode = Schema.AccessMode.READ_ONLY)
     private LocalDateTime createdAt;
 
     protected TaskActivity() {
