@@ -1,0 +1,2235 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.nikola:task-tracker-project-spring >---------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ task-tracker-project-spring ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ task-tracker-project-spring ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ task-tracker-project-spring ---
+[INFO] skip non existing resourceDirectory C:\Users\nikol\Documents\Spring_App_Repo\task-tracker-project-spring\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ task-tracker-project-spring ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ task-tracker-project-spring ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest
+15:21:44.830 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest]: ProjectControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:21:44.952 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest
+15:21:45.029 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest]: ProjectControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:21:45.032 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-06-15T15:21:45.372+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] c.n.t.c.ProjectControllerIntegrationTest : Starting ProjectControllerIntegrationTest using Java 23.0.1 with PID 14328 (started by nikol in C:\Users\nikol\Documents\Spring_App_Repo\task-tracker-project-spring)
+2026-06-15T15:21:45.374+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] c.n.t.c.ProjectControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T15:21:46.070+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T15:21:46.123+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2026-06-15T15:21:46.834+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-15T15:21:47.030+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-06-15T15:21:47.032+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-15T15:21:47.046+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:testdb (H2 2.4)
+2026-06-15T15:21:47.095+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] o.f.c.internal.database.base.Database    : Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026-06-15T15:21:47.133+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-06-15T15:21:47.137+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.017s)
+2026-06-15T15:21:47.144+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-06-15T15:21:47.188+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-06-15T15:21:47.199+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - create schema"
+2026-06-15T15:21:47.225+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - seed data"
+2026-06-15T15:21:47.237+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.020s)
+2026-06-15T15:21:47.354+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T15:21:47.429+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-15T15:21:47.893+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T15:21:47.956+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T15:21:48.799+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T15:21:48.806+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T15:21:48.896+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-15T15:21:50.030+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T15:21:50.259+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-06-15T15:21:50.523+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-15T15:21:50.831+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-06-15T15:21:50.889+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-15T15:21:50.889+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-15T15:21:50.892+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-06-15T15:21:50.978+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] c.n.t.c.ProjectControllerIntegrationTest : Started ProjectControllerIntegrationTest in 5.884 seconds (process running for 7.219)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\nikol\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.10\byte-buddy-agent-1.18.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/projects/3
+       Parameters = {}
+          Headers = [Authorization:"Basic YWRtaW46YWRtaW4="]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.nikola.task_tracker_project_spring.controller.ProjectController
+           Method = com.nikola.task_tracker_project_spring.controller.ProjectController#deleteById(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/projects/3
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/projects/3?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/projects
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/projects?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/projects/by-owner/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/projects/by-owner/1?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/projects/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/projects/1?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/projects/9999
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/projects/9999?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2026-06-15T15:21:51.973+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.nikola.task_tracker_project_spring.entity.Project com.nikola.task_tracker_project_spring.controller.ProjectController.addProject(com.nikola.task_tracker_project_spring.entity.Project): [Field error in object 'project' on field 'name': rejected value [ab]; codes [Size.project.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [project.name,name]; arguments []; default message [name],50,3]; default message [size must be between 3 and 50]] ]
+[ERROR] Tests run: 9, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 7.500 s <<< FAILURE! -- in com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest
+[ERROR] com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldDeleteProject_thenReturnNotFound -- Time elapsed: 0.090 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldDeleteProject_thenReturnNotFound(ProjectControllerIntegrationTest.java:92)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldReturnPagedProjects -- Time elapsed: 0.006 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldReturnPagedProjects(ProjectControllerIntegrationTest.java:31)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldReturnProjectsByOwner -- Time elapsed: 0.006 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldReturnProjectsByOwner(ProjectControllerIntegrationTest.java:54)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldReturnProjectById -- Time elapsed: 0.006 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldReturnProjectById(ProjectControllerIntegrationTest.java:39)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldReturnNotFound_whenProjectMissing -- Time elapsed: 0.006 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.ProjectControllerIntegrationTest.shouldReturnNotFound_whenProjectMissing(ProjectControllerIntegrationTest.java:46)
+
+[INFO] Running com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest
+2026-06-15T15:21:52.087+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest]: TaskControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:52.089+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest
+2026-06-15T15:21:52.089+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest]: TaskControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:52.092+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/tasks/5
+       Parameters = {}
+          Headers = [Authorization:"Basic YWRtaW46YWRtaW4="]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.nikola.task_tracker_project_spring.controller.TaskController
+           Method = com.nikola.task_tracker_project_spring.controller.TaskController#deleteById(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tasks/5
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/tasks/5?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tasks/9999
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/tasks/9999?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tasks/due-today
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/tasks/due-today?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2026-06-15T15:21:52.334+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public com.nikola.task_tracker_project_spring.entity.Task com.nikola.task_tracker_project_spring.controller.TaskController.addTask(java.lang.Long,com.nikola.task_tracker_project_spring.entity.Task) with 3 errors: [Field error in object 'task' on field 'priority': rejected value [null]; codes [NotNull.task.priority,NotNull.priority,NotNull.com.nikola.task_tracker_project_spring.entity.TaskPriority,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [task.priority,priority]; arguments []; default message [priority]]; default message [must not be null]] [Field error in object 'task' on field 'title': rejected value [x]; codes [Size.task.title,Size.title,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [task.title,title]; arguments []; default message [title],100,3]; default message [size must be between 3 and 100]] [Field error in object 'task' on field 'status': rejected value [null]; codes [NotNull.task.status,NotNull.status,NotNull.com.nikola.task_tracker_project_spring.entity.TaskStatus,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [task.status,status]; arguments []; default message [status]]; default message [must not be null]] ]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/users/1/tasks
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/users/1/tasks?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/projects/1/tasks
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Authorization:"Basic YWRtaW46YWRtaW4=", Content-Length:"99"]
+             Body = {"title":"Way overdue","description":"d","status":"TODO","priority":"HIGH","dueDate":"2020-01-01"}
+
+    Session Attrs = {}
+
+Handler:
+             Type = com.nikola.task_tracker_project_spring.controller.TaskController
+           Method = com.nikola.task_tracker_project_spring.controller.TaskController#addTask(Long, Task)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"assignee":null,"createdAt":"2026-06-15T15:21:52.4095268","description":"d","dueDate":"2020-01-01","id":8,"priority":"HIGH","status":"TODO","title":"Way overdue"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tasks/overdue
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/tasks/overdue?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/projects/1/tasks
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/projects/1/tasks?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tasks/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/tasks/1?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/projects/1/tasks
+       Parameters = {status=[TODO]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/projects/1/tasks?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[ERROR] Tests run: 12, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.425 s <<< FAILURE! -- in com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest
+[ERROR] com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldDeleteTask_thenReturnNotFound -- Time elapsed: 0.081 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldDeleteTask_thenReturnNotFound(TaskControllerIntegrationTest.java:106)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnNotFound_whenTaskMissing -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnNotFound_whenTaskMissing(TaskControllerIntegrationTest.java:39)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnTasksDueToday -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnTasksDueToday(TaskControllerIntegrationTest.java:69)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnTasksForUser -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnTasksForUser(TaskControllerIntegrationTest.java:62)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnOverdueTasks_afterCreatingAnOverdueOne -- Time elapsed: 0.073 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnOverdueTasks_afterCreatingAnOverdueOne(TaskControllerIntegrationTest.java:121)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnPagedTasksForProject -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnPagedTasksForProject(TaskControllerIntegrationTest.java:46)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnTaskById -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldReturnTaskById(TaskControllerIntegrationTest.java:32)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldFilterTasksByStatus -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.TaskControllerIntegrationTest.shouldFilterTasksByStatus(TaskControllerIntegrationTest.java:54)
+
+[INFO] Running com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest
+2026-06-15T15:21:52.512+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest]: UserControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:52.514+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest
+2026-06-15T15:21:52.515+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest]: UserControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:52.516+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/users/search
+       Parameters = {keyword=[alice]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/users/search?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2026-06-15T15:21:52.743+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.nikola.task_tracker_project_spring.entity.User com.nikola.task_tracker_project_spring.controller.UserController.createUser(com.nikola.task_tracker_project_spring.entity.User) with 3 errors: [Field error in object 'user' on field 'email': rejected value []; codes [NotBlank.user.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email]]; default message [must not be blank]] [Field error in object 'user' on field 'password': rejected value [short]; codes [Size.user.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password],2147483647,8]; default message [size must be between 8 and 2147483647]] [Field error in object 'user' on field 'username': rejected value [x]; codes [Size.user.username,Size.username,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.username,username]; arguments []; default message [username],2147483647,3]; default message [size must be between 3 and 2147483647]] ]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/users/9999
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/users/9999?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/users
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/users?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/users/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/api/users/1?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"SAMEORIGIN"]
+     Content type = application/json
+             Body = {"status":401,"message":"Authentication required"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[ERROR] Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.260 s <<< FAILURE! -- in com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest
+[ERROR] com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest.shouldSearchUsersByKeyword -- Time elapsed: 0.006 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest.shouldSearchUsersByKeyword(UserControllerIntegrationTest.java:55)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest.shouldReturnNotFound_whenUserMissing -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest.shouldReturnNotFound_whenUserMissing(UserControllerIntegrationTest.java:48)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest.shouldListAllUsers -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest.shouldListAllUsers(UserControllerIntegrationTest.java:33)
+
+[ERROR] com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest.shouldReturnUserById -- Time elapsed: 0.007 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$0(StatusResultMatchers.java:600)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at com.nikola.task_tracker_project_spring.controller.UserControllerIntegrationTest.shouldReturnUserById(UserControllerIntegrationTest.java:41)
+
+[INFO] Running com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest
+2026-06-15T15:21:52.775+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest]: ProjectRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:52.800+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest
+2026-06-15T15:21:52.801+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest]: ProjectRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:52.812+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-06-15T15:21:52.846+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] c.n.t.repository.ProjectRepositoryTest   : Starting ProjectRepositoryTest using Java 23.0.1 with PID 14328 (started by nikol in C:\Users\nikol\Documents\Spring_App_Repo\task-tracker-project-spring)
+2026-06-15T15:21:52.846+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] c.n.t.repository.ProjectRepositoryTest   : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T15:21:52.912+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T15:21:52.927+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2026-06-15T15:21:52.939+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-06-15T15:21:52.964+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:b7b70971-1403-46fb-8b01-c53ab51a7312;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-06-15T15:21:52.991+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:b7b70971-1403-46fb-8b01-c53ab51a7312 (H2 2.4)
+2026-06-15T15:21:53.006+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] o.f.c.internal.database.base.Database    : Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026-06-15T15:21:53.010+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-06-15T15:21:53.010+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.002s)
+2026-06-15T15:21:53.012+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-06-15T15:21:53.017+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-06-15T15:21:53.020+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - create schema"
+2026-06-15T15:21:53.030+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - seed data"
+2026-06-15T15:21:53.034+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.007s)
+2026-06-15T15:21:53.048+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T15:21:53.068+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T15:21:53.070+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:b7b70971-1403-46fb-8b01-c53ab51a7312]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: B7B70971-1403-46FB-8B01-C53AB51A7312/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T15:21:53.118+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T15:21:53.119+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T15:21:53.177+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] c.n.t.repository.ProjectRepositoryTest   : Started ProjectRepositoryTest in 0.359 seconds (process running for 9.419)
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.190+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.190+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.207+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.207+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.218+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.218+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.created_at,p1_0.description,p1_0.name,p1_0.owner_id from projects p1_0 where p1_0.owner_id=? order by p1_0.created_at desc
+[ERROR] Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.591 s <<< FAILURE! -- in com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest
+[ERROR] com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.shouldDeleteProject -- Time elapsed: 0.018 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.persistUser(ProjectRepositoryTest.java:28)
+	at com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.shouldDeleteProject(ProjectRepositoryTest.java:50)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.shouldReturnOnlyProjectsForGivenOwner -- Time elapsed: 0.009 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.persistUser(ProjectRepositoryTest.java:28)
+	at com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.shouldReturnOnlyProjectsForGivenOwner(ProjectRepositoryTest.java:60)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.shouldSaveAndFindById -- Time elapsed: 0.009 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.persistUser(ProjectRepositoryTest.java:28)
+	at com.nikola.task_tracker_project_spring.repository.ProjectRepositoryTest.shouldSaveAndFindById(ProjectRepositoryTest.java:41)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[INFO] Running com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest
+2026-06-15T15:21:53.366+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest]: TaskRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:53.378+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest
+2026-06-15T15:21:53.378+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest]: TaskRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:53.386+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.396+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.396+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.409+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.409+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.421+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.421+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.431+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.431+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.452+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.452+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.463+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.463+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+[ERROR] Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.105 s <<< FAILURE! -- in com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest
+[ERROR] com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldFilterByProjectAndStatus -- Time elapsed: 0.010 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.persistUser(TaskRepositoryTest.java:30)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldFilterByProjectAndStatus(TaskRepositoryTest.java:84)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldPageByProject -- Time elapsed: 0.009 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.persistUser(TaskRepositoryTest.java:30)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldPageByProject(TaskRepositoryTest.java:98)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldFindByAssignee -- Time elapsed: 0.009 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.persistUser(TaskRepositoryTest.java:30)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldFindByAssignee(TaskRepositoryTest.java:125)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldReturnOverdueTasks_excludingCompletedAndFutureDated -- Time elapsed: 0.017 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.persistUser(TaskRepositoryTest.java:30)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldReturnOverdueTasks_excludingCompletedAndFutureDated(TaskRepositoryTest.java:68)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldSaveFindAndDelete -- Time elapsed: 0.010 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.persistUser(TaskRepositoryTest.java:30)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldSaveFindAndDelete(TaskRepositoryTest.java:54)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldFindByDueDate -- Time elapsed: 0.009 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.persistUser(TaskRepositoryTest.java:30)
+	at com.nikola.task_tracker_project_spring.repository.TaskRepositoryTest.shouldFindByDueDate(TaskRepositoryTest.java:113)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 26 more
+
+[INFO] Running com.nikola.task_tracker_project_spring.repository.UserRepositoryTest
+2026-06-15T15:21:53.473+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.repository.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:53.484+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.repository.UserRepositoryTest
+2026-06-15T15:21:53.484+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.repository.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:53.491+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.repository.UserRepositoryTest
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.498+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.499+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.509+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.509+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.518+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.518+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.528+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.528+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.539+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.539+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.549+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.549+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.558+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.558+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+Hibernate: insert into users (created_at,email,password,username,id) values (?,?,?,?,default)
+2026-06-15T15:21:53.569+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-06-15T15:21:53.569+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jdbc.error             : Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+[ERROR] Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.104 s <<< FAILURE! -- in com.nikola.task_tracker_project_spring.repository.UserRepositoryTest
+[ERROR] com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.shouldMatchByUsernameFragment -- Time elapsed: 0.009 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.seed(UserRepositoryTest.java:34)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 25 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.shouldFindAll -- Time elapsed: 0.007 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.seed(UserRepositoryTest.java:34)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 25 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.shouldReturnAll_whenKeywordEmpty -- Time elapsed: 0.007 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.seed(UserRepositoryTest.java:34)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 25 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.shouldDeleteUser -- Time elapsed: 0.007 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.seed(UserRepositoryTest.java:34)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 25 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.shouldMatchCaseInsensitively -- Time elapsed: 0.009 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.seed(UserRepositoryTest.java:34)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 25 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.shouldSaveAndFindById -- Time elapsed: 0.007 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.seed(UserRepositoryTest.java:34)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 25 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.shouldMatchByEmailFragment -- Time elapsed: 0.009 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.seed(UserRepositoryTest.java:34)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 25 more
+
+[ERROR] com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.shouldReturnEmpty_whenNoMatch -- Time elapsed: 0.007 s <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$0(H2Dialect.java:854)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:96)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:65)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:183)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:123)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:87)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:87)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:384)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:228)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:144)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:91)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:51)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:695)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:678)
+	at org.springframework.boot.jpa.test.autoconfigure.TestEntityManager.persist(TestEntityManager.java:93)
+	at com.nikola.task_tracker_project_spring.repository.UserRepositoryTest.seed(UserRepositoryTest.java:34)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:185)
+	... 25 more
+
+[INFO] Running com.nikola.task_tracker_project_spring.service.ProjectServiceTest
+[ERROR] Tests run: 9, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.222 s <<< FAILURE! -- in com.nikola.task_tracker_project_spring.service.ProjectServiceTest
+[ERROR] com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldSaveProject_whenCreating -- Time elapsed: 0.190 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.ProjectService.createProject(ProjectService.java:37)
+	at com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldSaveProject_whenCreating(ProjectServiceTest.java:54)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldReturnPageOfProjects -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.ProjectService.findAll(ProjectService.java:29)
+	at com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldReturnPageOfProjects(ProjectServiceTest.java:46)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldUpdateNameAndDescription_whenProjectExists -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.ProjectService.assertVisible(ProjectService.java:83)
+	at com.nikola.task_tracker_project_spring.service.ProjectService.getProjectById(ProjectService.java:54)
+	at com.nikola.task_tracker_project_spring.service.ProjectService.updateById(ProjectService.java:74)
+	at com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldUpdateNameAndDescription_whenProjectExists(ProjectServiceTest.java:109)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldReturnProject_whenIdExists -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.ProjectService.assertVisible(ProjectService.java:83)
+	at com.nikola.task_tracker_project_spring.service.ProjectService.getProjectById(ProjectService.java:54)
+	at com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldReturnProject_whenIdExists(ProjectServiceTest.java:63)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldDelegateGetProjectsByOwner -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.ProjectService.getProjectsByOwner(ProjectService.java:60)
+	at com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldDelegateGetProjectsByOwner(ProjectServiceTest.java:79)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldDeleteProject_whenItExists -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.ProjectService.assertVisible(ProjectService.java:83)
+	at com.nikola.task_tracker_project_spring.service.ProjectService.getProjectById(ProjectService.java:54)
+	at com.nikola.task_tracker_project_spring.service.ProjectService.deleteById(ProjectService.java:68)
+	at com.nikola.task_tracker_project_spring.service.ProjectServiceTest.shouldDeleteProject_whenItExists(ProjectServiceTest.java:87)
+
+[INFO] Running com.nikola.task_tracker_project_spring.service.TaskServiceTest
+[ERROR] Tests run: 12, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.269 s <<< FAILURE! -- in com.nikola.task_tracker_project_spring.service.TaskServiceTest
+[ERROR] com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldQueryTasksDueToday -- Time elapsed: 0.194 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.TaskService.getTasksDueToday(TaskService.java:82)
+	at com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldQueryTasksDueToday(TaskServiceTest.java:153)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldQueryOverdueTasks_withTodaysDate -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.TaskService.getOverdueTasks(TaskService.java:99)
+	at com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldQueryOverdueTasks_withTodaysDate(TaskServiceTest.java:173)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldUpdateMutableFields_whenTaskExists -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.TaskService.assertVisible(TaskService.java:109)
+	at com.nikola.task_tracker_project_spring.service.TaskService.getTaskById(TaskService.java:34)
+	at com.nikola.task_tracker_project_spring.service.TaskService.updateById(TaskService.java:63)
+	at com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldUpdateMutableFields_whenTaskExists(TaskServiceTest.java:115)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldReturnTask_whenIdExists -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.TaskService.assertVisible(TaskService.java:109)
+	at com.nikola.task_tracker_project_spring.service.TaskService.getTaskById(TaskService.java:34)
+	at com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldReturnTask_whenIdExists(TaskServiceTest.java:56)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldDeleteTask_whenItExists -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.TaskService.assertVisible(TaskService.java:109)
+	at com.nikola.task_tracker_project_spring.service.TaskService.getTaskById(TaskService.java:34)
+	at com.nikola.task_tracker_project_spring.service.TaskService.deleteById(TaskService.java:75)
+	at com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldDeleteTask_whenItExists(TaskServiceTest.java:135)
+
+[ERROR] com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldResolveUserThenQueryByAssignee -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+	at com.nikola.task_tracker_project_spring.service.TaskService.getTasksByUser(TaskService.java:90)
+	at com.nikola.task_tracker_project_spring.service.TaskServiceTest.shouldResolveUserThenQueryByAssignee(TaskServiceTest.java:164)
+
+[INFO] Running com.nikola.task_tracker_project_spring.service.UserServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 s -- in com.nikola.task_tracker_project_spring.service.UserServiceTest
+[INFO] Running com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplicationTests
+2026-06-15T15:21:54.269+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplicationTests]: TaskTrackerProjectSpringApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:54.281+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplicationTests
+2026-06-15T15:21:54.283+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplicationTests]: TaskTrackerProjectSpringApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-15T15:21:54.284+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplication for test class com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-06-15T15:21:54.327+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] TaskTrackerProjectSpringApplicationTests : Starting TaskTrackerProjectSpringApplicationTests using Java 23.0.1 with PID 14328 (started by nikol in C:\Users\nikol\Documents\Spring_App_Repo\task-tracker-project-spring)
+2026-06-15T15:21:54.327+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] TaskTrackerProjectSpringApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T15:21:54.674+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T15:21:54.713+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2026-06-15T15:21:54.969+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-15T15:21:54.971+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn32: url=jdbc:h2:mem:testdb user=SA
+2026-06-15T15:21:54.971+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-15T15:21:54.973+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:testdb (H2 2.4)
+2026-06-15T15:21:54.980+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] o.f.c.internal.database.base.Database    : Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026-06-15T15:21:54.991+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.007s)
+2026-06-15T15:21:54.994+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2026-06-15T15:21:54.995+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2026-06-15T15:21:55.041+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T15:21:55.115+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T15:21:55.121+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T15:21:55.288+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T15:21:55.294+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T15:21:55.473+02:00  WARN 14328 --- [task-tracker-project-spring] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T15:21:55.613+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-06-15T15:21:55.692+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-15T15:21:55.804+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-06-15T15:21:55.861+02:00  INFO 14328 --- [task-tracker-project-spring] [           main] TaskTrackerProjectSpringApplicationTests : Started TaskTrackerProjectSpringApplicationTests in 1.571 seconds (process running for 12.102)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.605 s -- in com.nikola.task_tracker_project_spring.TaskTrackerProjectSpringApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ProjectControllerIntegrationTest.shouldDeleteProject_thenReturnNotFound:92 Status expected:<404> but was:<401>
+[ERROR]   ProjectControllerIntegrationTest.shouldReturnNotFound_whenProjectMissing:46 Status expected:<404> but was:<401>
+[ERROR]   ProjectControllerIntegrationTest.shouldReturnPagedProjects:31 Status expected:<200> but was:<401>
+[ERROR]   ProjectControllerIntegrationTest.shouldReturnProjectById:39 Status expected:<200> but was:<401>
+[ERROR]   ProjectControllerIntegrationTest.shouldReturnProjectsByOwner:54 Status expected:<200> but was:<401>
+[ERROR]   TaskControllerIntegrationTest.shouldDeleteTask_thenReturnNotFound:106 Status expected:<404> but was:<401>
+[ERROR]   TaskControllerIntegrationTest.shouldFilterTasksByStatus:54 Status expected:<200> but was:<401>
+[ERROR]   TaskControllerIntegrationTest.shouldReturnNotFound_whenTaskMissing:39 Status expected:<404> but was:<401>
+[ERROR]   TaskControllerIntegrationTest.shouldReturnOverdueTasks_afterCreatingAnOverdueOne:121 Status expected:<200> but was:<401>
+[ERROR]   TaskControllerIntegrationTest.shouldReturnPagedTasksForProject:46 Status expected:<200> but was:<401>
+[ERROR]   TaskControllerIntegrationTest.shouldReturnTaskById:32 Status expected:<200> but was:<401>
+[ERROR]   TaskControllerIntegrationTest.shouldReturnTasksDueToday:69 Status expected:<200> but was:<401>
+[ERROR]   TaskControllerIntegrationTest.shouldReturnTasksForUser:62 Status expected:<200> but was:<401>
+[ERROR]   UserControllerIntegrationTest.shouldListAllUsers:33 Status expected:<200> but was:<401>
+[ERROR]   UserControllerIntegrationTest.shouldReturnNotFound_whenUserMissing:48 Status expected:<404> but was:<401>
+[ERROR]   UserControllerIntegrationTest.shouldReturnUserById:41 Status expected:<200> but was:<401>
+[ERROR]   UserControllerIntegrationTest.shouldSearchUsersByKeyword:55 Status expected:<200> but was:<401>
+[ERROR] Errors: 
+[ERROR]   ProjectRepositoryTest.shouldDeleteProject:50->persistUser:28 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   ProjectRepositoryTest.shouldReturnOnlyProjectsForGivenOwner:60->persistUser:28 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   ProjectRepositoryTest.shouldSaveAndFindById:41->persistUser:28 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   TaskRepositoryTest.shouldFilterByProjectAndStatus:84->persistUser:30 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   TaskRepositoryTest.shouldFindByAssignee:125->persistUser:30 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   TaskRepositoryTest.shouldFindByDueDate:113->persistUser:30 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   TaskRepositoryTest.shouldPageByProject:98->persistUser:30 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   TaskRepositoryTest.shouldReturnOverdueTasks_excludingCompletedAndFutureDated:68->persistUser:30 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   TaskRepositoryTest.shouldSaveFindAndDelete:54->persistUser:30 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   UserRepositoryTest.seed:34 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   UserRepositoryTest.seed:34 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   UserRepositoryTest.seed:34 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   UserRepositoryTest.seed:34 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   UserRepositoryTest.seed:34 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   UserRepositoryTest.seed:34 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   UserRepositoryTest.seed:34 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   UserRepositoryTest.seed:34 » ConstraintViolation could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_4D INDEX PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'alice' )"; SQL statement:
+insert into users (created_at,email,password,username,id) values (?,?,?,?,default) [23505-240]] [insert into users (created_at,email,password,username,id) values (?,?,?,?,default)]
+[ERROR]   ProjectServiceTest.shouldDelegateGetProjectsByOwner:79 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   ProjectServiceTest.shouldDeleteProject_whenItExists:87 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   ProjectServiceTest.shouldReturnPageOfProjects:46 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   ProjectServiceTest.shouldReturnProject_whenIdExists:63 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   ProjectServiceTest.shouldSaveProject_whenCreating:54 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   ProjectServiceTest.shouldUpdateNameAndDescription_whenProjectExists:109 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   TaskServiceTest.shouldDeleteTask_whenItExists:135 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   TaskServiceTest.shouldQueryOverdueTasks_withTodaysDate:173 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   TaskServiceTest.shouldQueryTasksDueToday:153 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   TaskServiceTest.shouldResolveUserThenQueryByAssignee:164 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   TaskServiceTest.shouldReturnTask_whenIdExists:56 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[ERROR]   TaskServiceTest.shouldUpdateMutableFields_whenTaskExists:115 » NullPointer Cannot invoke "com.nikola.task_tracker_project_spring.config.AuthFacade.isAdmin()" because "this.authFacade" is null
+[INFO] 
+[ERROR] Tests run: 74, Failures: 17, Errors: 29, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.212 s
+[INFO] Finished at: 2026-06-15T15:21:56+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.6:test (default-test) on project task-tracker-project-spring: There are test failures.
+[ERROR] 
+[ERROR] See C:\Users\nikol\Documents\Spring_App_Repo\task-tracker-project-spring\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
